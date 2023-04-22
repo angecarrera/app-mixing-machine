@@ -1,0 +1,123 @@
+{
+    "type": "VStack",
+    "props": {
+      "w": "full",
+      "h": "full",
+      "padding": 10,
+      "alignItems": "flex-start",
+      "spacing": "10px",
+      "borderWidth": "1px",
+      "borderColor": "gray.300",
+      "borderRadius": "md"
+    },
+    "children": [
+      {
+        "type": "Heading",
+        "props": {
+          "as": "h4",
+          "size": "md",
+          "children": "Mixture Preparation Process"
+        }
+      },
+      {
+        "type": "Accordion",
+        "props": {
+          "w": "100%",
+          "allowMultiple": true
+        },
+        "children": [
+          {
+            "type": "AccordionItem",
+            "children": [
+              {
+                "type": "AccordionButton",
+                "props": {
+                  "id": "btn1sugar",
+                  "children": "Additive"
+                }
+              },
+              {
+                "type": "AccordionPanel",
+                "props": {
+                  "pb": 4},
+                  "children": {
+                    "type": "NumberInput",
+                    "props": {
+                      "label": "Additive: ",
+                      "idIncrement": "btn3sugarinc",
+                      "idDecrease": "btn3sugardec",                   
+                      "defaultValue": 3
+                    }
+                  }
+                }
+              
+            ]
+          },
+          {
+            "type": "AccordionItem",
+            "children": [
+              {
+                "type": "AccordionButton",
+                "props": {
+                  "id": "btn1container",
+                  "children": "Container"
+                }
+              },
+              {
+                "type": "AccordionPanel",
+                "props": {
+                  "pb": 4},
+                  "children": {
+                    "type": "YesNo",
+                    "props": {
+                      "label": "Container? ",
+                      "id": "btn2container",
+                      "defaultValue": true
+                    }
+                  }
+                }
+              
+            ]
+          },
+          {
+            "type": "AccordionItem",
+            "children": [
+              {
+                "type": "AccordionButton",
+                "props": {
+                  "id": "btn1mixture",
+                  "children": "Mixture"
+                }
+              },
+              {
+                "type": "AccordionPanel",
+                "props": {
+                  "pb": 4},
+                  "children": {
+                    "type": "SimpleGrid",
+                    "props": {
+                      "w": "full",
+                      "spacing": 4,
+                      "templateColumns": "repeat(auto-fill, minmax(200px, 1fr))",
+                      "alignItems": "center"
+                    },
+                    "children": []
+                  }
+                }
+              
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Button",
+        "props": {
+          "id": "btn1ok",
+          "colorScheme": "blue",
+          "alignSelf": "center",
+          "children": "OK"
+        },
+        "children": []
+      }
+    ]
+  }
