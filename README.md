@@ -1,6 +1,6 @@
 # Mixing Machine App
 
-This is a web application that allows users to mix different ingredients and create custom recipes. The front-end is built with Next.js, TypeScript, and Chakra UI, while the back-end API server is built with Express and Node.js .
+This is a web application that simulates the use of a mixing industrial machine. The front-end is built with Next.js, TypeScript, and Chakra UI, while the back-end API server is built with Express and Node.js .
 The database is Postgre, the file scriptdb.sql reflects the structure.
 
 ## Installation
