@@ -2,6 +2,14 @@ import { VStack, Heading, Accordion, AccordionItem, AccordionButton, AccordionPa
 import  NumberInput from "../components/NumberInput";
 import  YesNo from "../components/YesNo";
 import * as constants from "../config/constants";
+import BasicCard from "../components/BasicCard";
+
+const mixtures = [];
+
+for (let i = 1; i <= 16; i++) {
+  const newMixture = { id: i, title: "Mixture" + i};
+  mixtures.push(newMixture);
+}
 
 export function renderJSON(jsonData, userid) {
 
@@ -26,6 +34,9 @@ export function renderJSON(jsonData, userid) {
   console.error(err);
   }
 }
+const mixtureCards = mixtures.map((mixture) => (
+  <BasicCard  onClick={handleTriggerClick} userId={userid} title={mixture.title}  id={mixture.id}  thumbnailUrl={"https://static.thenounproject.com/png/3075479-200.png"}/>
+));
   const { type, props, children } = jsonData;
   console.log(jsonData)
   switch (type) {
@@ -60,13 +71,13 @@ export function renderJSON(jsonData, userid) {
             </AccordionPanel>
           );
       case "NumberInput":
-        return <NumberInput {...props} />;
+        return <NumberInput {...props} onClick={handleTriggerClick} userId={userid}/>;
       case "YesNo":
         return <YesNo {...props} />;
       case "SimpleGrid":
         return (
           <SimpleGrid {...props}>
-           
+            {mixtureCards}
           </SimpleGrid>
         );
       case "Button":

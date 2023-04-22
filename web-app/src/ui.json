@@ -32,7 +32,7 @@
               {
                 "type": "AccordionButton",
                 "props": {
-                  "id": "btn1sugar",
+                  "id": "btn1additive",
                   "children": "Additive"
                 }
               },
@@ -44,8 +44,8 @@
                     "type": "NumberInput",
                     "props": {
                       "label": "Additive: ",
-                      "idIncrement": "btn3sugarinc",
-                      "idDecrease": "btn3sugardec",                   
+                      "idIncrement": "btn3increaseadditive",
+                      "idDecrease": "btn3decreaseadditive",                   
                       "defaultValue": 3
                     }
                   }
