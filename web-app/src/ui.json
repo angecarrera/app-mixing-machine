@@ -85,7 +85,7 @@
               {
                 "type": "AccordionButton",
                 "props": {
-                  "id": "btn1mixture",
+                  "id": "btn1drink",
                   "children": "Mixture"
                 }
               },

@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, CardFooter, Heading, Image,Stack, VStack } from '@chakra-ui/react'
+import { Button, Card, CardBody, CardFooter, Heading, Image,Stack, VStack, useToast } from '@chakra-ui/react'
 
 //import useMatomo from '@jonkoops/matomo-tracker-react/lib/useMatomo';
 import { useState } from 'react';
@@ -10,6 +10,7 @@ import { useState } from 'react';
  
 
   function BasicCard({id, thumbnailUrl, title, onClick, userId}) {
+  const toast = useToast();
   const [value, setValue] = useState<number>(0);
   
   const [buttonState, setButtonState] = useState(null);
@@ -54,7 +55,5 @@ import { useState } from 'react';
   
   export default BasicCard;
 
-function toast(arg0: { description: string; status: string; duration: number; isClosable: boolean; }) {
-  throw new Error('Function not implemented.');
-}
+
   
