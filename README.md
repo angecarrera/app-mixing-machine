@@ -34,7 +34,7 @@ We welcome contributions from other developers! To contribute, follow these step
 
 ## License
 
-This project is released under the MIT license. See the LICENSE file for more details.
+This project is released under the Apache license. See the LICENSE file for more details.
 
 ## Contact
 
