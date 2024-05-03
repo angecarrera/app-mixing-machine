@@ -3,7 +3,8 @@ This is a web application that simulates the use of a mixing industrial machine.
 The database is Postgre, the file scriptdb.sql reflects the structure.
 
 ### Publication related: 
-Structured dataset of human-machine interactions enabling adaptive user interfaces. Scientific Data
+Structured dataset of human-machine interactions enabling adaptive user interfaces. Scientific Data.
+
 Carrera-Rivera, A., Reguera-Bakhache, D., Larrinaga, F., Lasa, G., & Garitano, I. (2023)., 10(1), 831.
 https://www.nature.com/articles/s41597-023-02741-8
 
