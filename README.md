@@ -1,7 +1,11 @@
 # Mixing Machine App
-
 This is a web application that simulates the use of a mixing industrial machine. The front-end is built with Next.js, TypeScript, and Chakra UI, while the back-end API server is built with Express and Node.js .
 The database is Postgre, the file scriptdb.sql reflects the structure.
+
+### Publication related: 
+Structured dataset of human-machine interactions enabling adaptive user interfaces. Scientific Data
+Carrera-Rivera, A., Reguera-Bakhache, D., Larrinaga, F., Lasa, G., & Garitano, I. (2023)., 10(1), 831.
+https://www.nature.com/articles/s41597-023-02741-8
 
 ## Installation
 
@@ -38,4 +42,4 @@ This project is released under the Apache license. See the LICENSE file for more
 
 ## Contact
 
-If you have any questions or feedback, please contact the project owner at aicarrera@mondragon.edu.
+If you have any questions or feedback, please contact the project owner at angela.carrera.rivera@gmail.com
